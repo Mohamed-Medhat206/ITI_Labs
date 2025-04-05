@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Project</title>
+  <script src="jquery-3.7.1.js"></script>
+  <style>
+    body{
+      background-color: rgb(243, 107, 107);
+      color: aliceblue;
+    }
+    h1{
+      text-align: center;
+    }
+    button{
+      color: aliceblue;
+      background-color: brown;
+      border: none;
+      width: 100px;
+        padding: 8px;
+        border-radius: 10px;
+    }
+    button:hover{
+      background-color: rgb(170, 80, 80);
+    }
+    #form{
+        display: none;
+      }
+      #form p,#form input{
+        margin: 5px;
+      }
+      #form input{
+        width: 500px;
+        padding: 5px;
+      }
+      #form button{
+        margin: 30px 220px;
+      }
+
+      .error{
+        text-align: center;
+        font-weight: bold;
+        color: peachpuff;
+        display: none;
+      }
+      .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      table{
+        text-align: center;
+        display: none;
+      }
+      th{
+        padding: 10px 20px;
+        background-color: rgb(38, 32, 32);
+      }
+  </style>
+</head>
+<body>
+  <h1>Book Library</h1>
+  <div class="nofbooks">
+  <span>How Many Boooks?</span>
+  <input type="text" id="booksNum" autofocus>
+  <button>OK</button>
+  </div>
+  <div class="container">
+  <div id="form">
+    <p>Book Name</p>
+    <input type="text" placeholder="Boos Name" autocomplete>
+    <p class="error">Please Enter Valid Book Name</p>
+    <p>Price</p>
+    <input type="text" placeholder="Book Price" autocomplete>
+    <p class="error">Please Enter Valid Price</p>
+    <p>Author Name</p>
+    <input type="text" placeholder="Author Name" autocomplete>
+    <p class="error">Please Enter Valid Author Name</p>
+    <p>Author E-mail</p>
+    <input type="email" placeholder="Author E-mail" autocomplete>
+    <p class="error">Please Enter Valid E-mail</p>
+    <button style="display: block;">Add Book</button>
+  </div>
+    <table border="2px" width = "50%">
+      <thead>
+        <tr>
+          <th>Book Name</th>
+          <th>Price</th>
+          <th>Author Name</th>
+          <th>E-mail</th>
+          <th colspan="2">Actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <script src="script.js"></script>
+
+</body>
+</html> 
